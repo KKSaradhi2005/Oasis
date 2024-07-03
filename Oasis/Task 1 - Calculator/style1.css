@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(230, 136, 99, 0.716);
+}
+
+.calculator {
+    border: 100px solid #ccc;
+    border-radius: 100px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo p {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(201, 91, 48);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.display {
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding: 20px;
+    font-size: 2em;
+    border-radius: 10px;
+}
+
+.display input {
+    width: 100%;
+    border: none;
+    background: none;
+    color: white;
+    text-align: right;
+    font-size: 1em;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 20px;
+    font-size: 1.5em;
+    border: 1px solid whitesmoke;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: rgb(179, 99, 42);
+}
+
+.button:active {
+    background-color: rgb(239, 135, 94);
+}
+
+.button:nth-child(4n) {
+    background-color: rgb(228, 167, 12);
+    color: #fff;
+}
+
+.button:nth-child(4n):hover {
+    background-color: rgb(255, 145, 0);
+}
+
+.button:nth-child(4n):active {
+    background-color: rgb(207, 148, 11);
+}
+
+.button:nth-last-child(2) {
+    grid-column: span 2;
+    background-color: rgb(189, 51, 13);
+    color: white;
+}
+
+.button:nth-last-child(2):hover {
+    background-color: rgb(255, 98, 0);
+}
+
+.button:nth-last-child(2):active {
+    background-color: red;
+}
+
+.button:nth-last-child(1) {
+ 
+    background-color: rgb(228, 167, 12);
+    color: white;
+}
+.button:nth-last-child(1):hover {
+    background-color: rgb(255, 98, 0);
+}
